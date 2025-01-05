@@ -15,7 +15,7 @@ time ./RsaCtfTool.py --publickey examples/wiener.pub --private --decryptfile exa
 echo -e "\033[1m\nTest Boneh Durfee\033[0m"
 time ./RsaCtfTool.py --publickey examples/wiener.pub --private --decryptfile examples/wiener.cipher --attack boneh_durfee
 echo -e "\033[1m\nTest commonfactors\033[0m"
-time ./RsaCtfTool.py --publickey "examples/commonfactor?.pub" --private --attack commonfactors
+time ./RsaCtfTool.py --publickey "examples/commonfactor?.pub" --private --attack common_factors
 echo -e "\033[1m\nTest fermat\033[0m"
 time ./RsaCtfTool.py --publickey examples/close_primes.pub --private --decryptfile examples/close_primes.cipher --attack fermat
 echo -e "\033[1m\nTest fermat2\033[0m"
